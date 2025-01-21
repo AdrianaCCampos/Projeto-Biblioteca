@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BIBLIOTECA DIGITAL</h1>
+        </header>
+        <div class="form-container">           
+            <h2>Consultar Livro</h2>            
+            <input type="consult" id="consultaInput" placeholder="Pesquisa ">
+            <button onclick="searchBook()">Busca</button>
+            <h2>Cadastrar Novo Livro</h2>
+            <input type="text" id="nameInput" placeholder="Nome">
+            <input type="text" id="autorInput" placeholder="Autor">
+            <input type="text" id="imageInput" accept="image/*" placeholder="URL Imagem">
+            <button onclick="addBook()">Adicionar Livro</button>
+        </div>
+
+        <section id="cardContainer" class="card-container"></section>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
