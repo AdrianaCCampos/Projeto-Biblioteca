@@ -1,25 +1,39 @@
-# Biblioteca Digital
+# Sistema de Gerenciamento de Biblioteca
 
 Este é um projeto de uma **Biblioteca Digital** onde é possível cadastrar, consultar, editar e excluir livros. A aplicação permite interagir com um servidor API para gerenciamento dos livros.
 
 ## Funcionalidades
 
-- **Consultar livros**: Pesquisa por nome ou autor.
-- **Cadastrar livros**: Formulário para adicionar novos livros, incluindo nome, autor e imagem.
-- **Editar livros**: Permite a edição dos livros cadastrados.
-- **Excluir livros**: Exclui um livro do banco de dados.
-- **Exibição de livros**: Os livros cadastrados são exibidos em uma interface de cartão.
+Cadastro, consulta, edição e exclusão de livros.
+Integração entre front-end e back-end.
+Banco de dados com as informações dos livros.
 
 ## Tecnologias Utilizadas
 
 - **Front-end**: HTML, CSS, JavaScript
-- **Back-end**: Java Spring Boot (API para manipulação dos livros)
-- **Banco de Dados**: MySQL (ou qualquer outro que você está utilizando)
+- **Back-end**: Java Spring Boot 
+- **Banco de Dados**: MySQL 
+
+## Pré-requisitos
+Java: versão necessária (ex.: Java 17).
+Spring Boot: (se aplicável).
+Node.js/NPM: se necessário para o front-end.
+Banco de dados: MySQL ou o utilizado no projeto.
 
 ## Como Rodar o Projeto Localmente
 
 ### Front-end
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/AdrianaCCampos/Projeto-Biblioteca
+
+   git clone https://github.com/AdrianaCCampos/Projeto-Biblioteca.git
+
+2. Back-end:
+    mvn spring-boot:run
+
+3. Banco de Dados:
+    mysql -u root -p < banco.sql
+
+4. Front-end
+    Abra o arquivo index.html diretamente ou configure para rodar em um servidor local.
+
